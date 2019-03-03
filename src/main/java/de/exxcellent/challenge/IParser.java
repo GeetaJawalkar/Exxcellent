@@ -1,5 +1,7 @@
 package de.exxcellent.challenge;
 
+import java.util.List;
+
 public interface IParser {
-	public void parse();
+	public List<String[]> parse();
 }
