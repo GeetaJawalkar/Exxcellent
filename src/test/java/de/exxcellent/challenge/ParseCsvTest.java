@@ -16,10 +16,12 @@ class ParseCsvTest {
 	
 	@BeforeEach
 	void setUp() throws Exception {
+		String[] data0 = {"Day", "MxT", "MnT"};
 		String[] data1 = {"brand1", "10", "20"};
 		String[] data2 = {"brand2", "-2", "10"};
 		String[] data3 = {"brand3", "-15", "-25"};
 		
+		dataList.add(data0);
 		dataList.add(data1);
 		dataList.add(data2);
 		dataList.add(data3);
@@ -37,6 +39,7 @@ class ParseCsvTest {
 		assertTrue(Arrays.equals(dataList.get(0), result.get(0)));
 		assertTrue(Arrays.equals(dataList.get(1), result.get(1)));
 		assertTrue(Arrays.equals(dataList.get(2), result.get(2)));
+		assertTrue(Arrays.equals(dataList.get(3), result.get(3)));
 	}
 
 

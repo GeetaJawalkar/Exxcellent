@@ -30,23 +30,24 @@ public class Calculate {
 		Integer diff, minDiff = 0;
 		String minDiffVar=null;
 
-		int key0 = indexes[0];
-		int key1 = indexes[1];
-		int key2 = indexes[2];
+		int col0 = indexes[0];
+		int col1 = indexes[1];
+		int col2 = indexes[2];
 		
-		String[] dataString = dataList.get(key0);
+		String[] dataString = dataList.get(1);
 
-		diff = Math.abs( Integer.valueOf(dataString[key1]) - Integer.valueOf(dataString[key2]) );
+		diff = Math.abs( Integer.valueOf(dataString[col1]) - Integer.valueOf(dataString[col2]) );
 		minDiff = diff;
+		minDiffVar = dataString[col0];
 		
-		for (int i = 1; i < dataList.size(); i++) {
+		for (int i = 2; i < dataList.size(); i++) {
 			
 		    dataString = dataList.get(i);
-		    diff = Math.abs( Integer.valueOf(dataString[key1]) - Integer.valueOf(dataString[key2]) );
+		    diff = Math.abs( Integer.valueOf(dataString[col1]) - Integer.valueOf(dataString[col2]) );
 		    
 		    if(diff<minDiff) {		    	
 		    	minDiff = diff; 
-		    	minDiffVar = dataString[0];	    	
+		    	minDiffVar = dataString[col0];	    	
 		    } 	   
 		}
 
