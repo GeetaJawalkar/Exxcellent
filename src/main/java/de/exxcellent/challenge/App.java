@@ -17,7 +17,7 @@ public final class App {
     public static void main(String... args) {
 
     	IParser parseCsv = new ParseCsv();
-    	List<String[]> dataList = parseCsv.parse("sample.csv");
+    	List<String[]> dataList = parseCsv.parse("src/main/resources/de/exxcellent/challenge/weather.csv");
     	
     	Calculate calc = new Calculate();
     	String[] interested_params = {"Day", "MxT", "MnT"};
