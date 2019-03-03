@@ -20,7 +20,7 @@ public class Calculate {
 		int par2 = Arrays.asList(firstLine).indexOf(interested_params[1] );
 		int par3 = Arrays.asList(firstLine).indexOf(interested_params[2] );
 
-		int[] result = {par1, par2, par3};
+		int[] result = {par1, par2, par3};		
 		return result;
 	}
 	
