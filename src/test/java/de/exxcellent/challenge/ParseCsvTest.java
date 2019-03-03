@@ -35,7 +35,7 @@ class ParseCsvTest {
 	@Test
 	void testParse() {
 		ParseCsv parser = new ParseCsv();
-		List<String[]> result = parser.parse();
+		List<String[]> result = parser.parse("sample.csv");
 		assertTrue(Arrays.equals(dataList.get(0), result.get(0)));
 		assertTrue(Arrays.equals(dataList.get(1), result.get(1)));
 		assertTrue(Arrays.equals(dataList.get(2), result.get(2)));

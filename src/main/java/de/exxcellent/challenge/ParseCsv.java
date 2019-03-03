@@ -9,8 +9,8 @@ import java.util.Scanner;
 public class ParseCsv implements IParser {
 
 	@Override
-	public List<String[]> parse() {
-		File file = new File("sample.csv");	
+	public List<String[]> parse(String filename) {
+		File file = new File(filename);
 		List<String[]> dataList = new ArrayList<String[]>();
 		
 		try {

@@ -17,7 +17,7 @@ public final class App {
     public static void main(String... args) {
 
     	IParser parseCsv = new ParseCsv();
-    	List<String[]> dataList = parseCsv.parse();
+    	List<String[]> dataList = parseCsv.parse("sample.csv");
     	
     	Calculate calc = new Calculate();
     	String[] interested_params = {"Day", "MxT", "MnT"};
